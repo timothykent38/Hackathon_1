@@ -32,6 +32,7 @@
    }
 
    .buttonFinished{
+
     width: 400;
     height: 200;
        color: teal;
@@ -39,3 +40,23 @@
        font-size: 60;
        text-align: center;
    }
+
+   .safeResult{
+    color: green;
+    font-size: 60;
+
+}
+    .unsafeResult{
+        color: red;
+        font-size: 60;
+    }
+
+    .midsafeResult{
+        color:gold;
+        font-size: 60;
+    }
+
+
+
+
+

@@ -1,9 +1,13 @@
 <html>
     <head>
-        <title> Home Page </title>
         <link rel="stylesheet" href = "styles.css">
+        <script src ="ignorethis.js"></script>
     </head>
     <body>
+        <script> 
+        //hi
+        </script>
+
         <div>
             <p class = "headingTitle">
                 Welcome to the covid 19 checker
@@ -14,15 +18,33 @@
                 This website works by asking you different questions then decides if you are either safe, low risk, or high risk
                 Please answer all questions truthfully
             </p>
-        
-            <div>
-                
-                <a href = "questions.html"> link to question page </a>
-            </div>
+            <button>
+                Hi
+            </button>
 
-            
-        
-              
+            <p id = "test">
+                    Empty
+            </p>
+
+            <div>
+                <form>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname">
+                    <label for="submitbutton"> Submit Button</label><br>
+                    <input type ="submit" id = "subB" name = "subB" onclick=" ntame();">
+                  </form>
+            </div>
+            <script type = "text/javascript">
+            function ntame(){
+            var fname = document.getElementById("fname").value;
+            document.getElementById("test").innerHTML = "HI";
+        }
+          </script>
+              <script>
+                
+              </script>
             
             
         </div>

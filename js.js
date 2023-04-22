@@ -3,7 +3,7 @@ let readlineSync = require('readline-sync');
 // Ask the user health-related questions and record their responses
 let feelingGood = readlineSync.question("Are you feeling good today? (yes or no) ").toLowerCase();
 
-let contactCovid = readlineSync.question("Have you been exposed to COVID patients in the past week? (yes or no) ").toLowerCase();
+let contactCovid = readlineSync.question("Have you been exposed to COVID patients in the past 14 days? (yes or no) ").toLowerCase();
 
 let hasFever = readlineSync.question("Do you have a fever? (yes or no) ").toLowerCase();
 
