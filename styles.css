@@ -30,3 +30,7 @@
        mARGIN: 50;
        font-size: 60;
    }
+
+   .buttonFinished{
+    color: green;
+   }

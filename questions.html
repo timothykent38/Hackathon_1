@@ -1,6 +1,7 @@
 <html>
     <head>
         <link rel="stylesheet" href = "styles.css">
+        <title> Questions</title>
     </head>
 
     <body>
@@ -13,7 +14,7 @@
  
                 
                     <button class = "buttonY" id="button">Yes</buttton> 
-                    <button class ="buttonN" id="button">No</buttton>
+                    <button onclick="f()" class ="buttonN" id="button">No</buttton>
                 
             
 
@@ -26,7 +27,7 @@
             </p>
 
             
-            <button class = "buttonY" id="button">Yes</buttton> 
+            <button class = "buttonY" onclick = "e()" id="button">Yes</buttton> 
                 <button class ="buttonN" id="button">No</buttton>
 
         </div>
@@ -35,7 +36,7 @@
             <p class = "questionText"> Question 3: <br> </p>
             <p class = "bobsText">Do you have a fever?  </p>
 
-            <button class = "buttonY" id="button">Yes</buttton> 
+            <button class = "buttonY" onclick = "fev()" id="button">Yes</buttton> 
                 <button class ="buttonN" id="button">No</buttton>
         </div>
 
@@ -43,18 +44,59 @@
             <p class = "questionText"> Question 4: <br>  </p>
             <p class = "bobsText"> Do you have a cough?  </p>
 
-            <button class = "buttonY" id="button">Yes</buttton> 
-                <button class ="buttonN" id="button">No</buttton>
+            <button class = "buttonY" onclick = "c()" id="button">Yes</buttton> 
+             <button class ="buttonN" id="button">No</buttton>
         </div>
 
         <div>
             <p class = "questionText"> Question 5: <br>  </p>
             <p class = "bobsText">Do you have shortness of breath? </p>
 
-            <button class = "buttonY" id="button">Yes</buttton> 
-                <button class ="buttonN" id="button">No</buttton>
+            <button class = "buttonY" id="button" onclick = "s()">Yes</buttton> 
+            <button class ="buttonN" id="button">No</buttton>
         </div>
         
-        
+        <div>
+            <button onclick = "getR()"> GET RESULTS </button>
+        </div>
+        <script>
+            var feelsgood = true;
+            var exposed  = false;
+            var fever = false;
+            var cough = false;
+            var shortBreath = false;
+            
+            function f(){
+                feelsgood = false;
+            }
+
+            function e(){
+                exposed = true;
+            }
+
+            function fev(){
+                fever = true;
+            }
+
+            function c(){
+                cough = true;
+            }
+
+            function s(){
+                shortBreath = true;
+            }
+
+            function getR(){
+            if (feelsgood == true && exposed == false && fever == false && cough == false && shortBreath == false) {
+            // goes to page for green
+            } else if ((feelsgood == false || fever == true) && (cough == true || shortBreath == true) || exposed == false) {
+            // goes to page for red
+            } else {
+                // goes to page for yellow
+            
+            }
+}
+
+        </script>
     </body>
 </html>
