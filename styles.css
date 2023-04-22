@@ -9,3 +9,24 @@
     font-size: 40;
     
 }
+
+.bobsText{
+    color:cadetblue;
+    font-size: 35;
+}
+
+.buttonY{
+ width: 200;
+ height: 100;
+    color: green;
+    mARGIN: 50;
+    font-size: 60;
+}
+
+.buttonN{
+    width: 200;
+    height: 100;
+       color: red;
+       mARGIN: 50;
+       font-size: 60;
+   }
