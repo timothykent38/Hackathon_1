@@ -16,84 +16,95 @@
 }
 
 .buttonY1{
- width: 200;
- height: 100;
+    border-radius: 25px;
+    width: 200;
+    height: 100;
     color: green;
-    mARGIN: 50;
+    margin: 50;
     font-size: 60;
 }
 
 .buttonN1{
+    border-radius: 25px;
     width: 200;
     height: 100;
-       color: red;
-       mARGIN: 50;
-       font-size: 60;
+    color: red;
+    margin: 50;
+    font-size: 60;
    }
 
-   .buttonY2{
+.buttonY2{
+    border-radius: 25px;
     width: 200;
     height: 100;
-       color: green;
-       mARGIN: 50;
-       font-size: 60;
-   }
-   
-   .buttonN2{
-       width: 200;
-       height: 100;
-          color: red;
-          mARGIN: 50;
-          font-size: 60;
-      }
-      .buttonY3{
-        width: 200;
-        height: 100;
-           color: green;
-           mARGIN: 50;
-           font-size: 60;
-       }
-       
-       .buttonN3{
-           width: 200;
-           height: 100;
-              color: red;
-              mARGIN: 50;
-              font-size: 60;
-          }
-          .buttonY4{
-            width: 200;
-            height: 100;
-               color: green;
-               mARGIN: 50;
-               font-size: 60;
-           }
-           
-           .buttonN4{
-               width: 200;
-               height: 100;
-                  color: red;
-                  mARGIN: 50;
-                  font-size: 60;
-              }
-              .buttonY5{
-                width: 200;
-                height: 100;
-                   color: green;
-                   mARGIN: 50;
-                   font-size: 60;
-               }
-               
-               .buttonN5{
-                   width: 200;
-                   height: 100;
-                      color: red;
-                      mARGIN: 50;
-                      font-size: 60;
-                  }
+    color: green;
+    margin: 50;
+    font-size: 60;
+}
+
+.buttonN2{
+    border-radius: 25px;
+    width: 200;
+    height: 100;
+    color: red;
+    margin: 50;
+    font-size: 60;
+}
+.buttonY3{
+    border-radius: 25px;
+    width: 200;
+    height: 100;
+    color: green;
+    margin: 50;
+    font-size: 60;
+}
+    
+.buttonN3{
+    border-radius: 25px;
+    width: 200;
+    height: 100;
+    color: red;
+    margin: 50;
+    font-size: 60;
+}
+.buttonY4{
+    border-radius: 25px;
+    width: 200;
+    height: 100;
+    color: green;
+    margin: 50;
+    font-size: 60;
+}
+        
+.buttonN4{
+    border-radius: 25px;
+    width: 200;
+    height: 100;
+    color: red;
+    margin: 50;
+    font-size: 60;
+    }
+.buttonY5{
+    border-radius: 25px;
+    width: 200;
+    height: 100;
+    color: green;
+    margin: 50;
+    font-size: 60;
+}
+            
+.buttonN5{
+    border-radius: 25px;
+    width: 200;
+    height: 100;
+    color: red;
+    margin: 50;
+    font-size: 60;
+}
 
    .buttonFinished{
 
+    border-radius: 25px;
     width: 400;
     height: 200;
        color: teal;
