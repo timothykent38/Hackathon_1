@@ -32,5 +32,10 @@
    }
 
    .buttonFinished{
-    color: green;
+    width: 400;
+    height: 200;
+       color: teal;
+       mARGIN: 50;
+       font-size: 60;
+       text-align: center;
    }
