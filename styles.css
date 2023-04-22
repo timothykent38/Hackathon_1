@@ -1,7 +1,7 @@
 .headingTitle{
-    color: blue;
+    color:black;
     text-align: center;
-    font-size: 50;
+    font-size: 55;
 }
 
 .questionText{
@@ -131,6 +131,21 @@
     .firstpageimage{
         width: 500;
         height: 500;
+    }
+
+    .mainPage{
+        background-color:rgba(231, 206, 97, 0.667);
+    }
+    .firstPageTxt{
+        font-size: 30;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+    }
+
+    .linkToQuestions{
+        float: right ;
+        margin: 150;
+        font-size: 20
     }
 
 
