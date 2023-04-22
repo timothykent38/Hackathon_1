@@ -89,12 +89,17 @@
             function getR(){
             if (feelsgood == true && exposed == false && fever == false && cough == false && shortBreath == false) {
             // goes to page for green
+            
+                document.location.href = "safe.html";
             } else if ((feelsgood == false || fever == true) && (cough == true || shortBreath == true) || exposed == false) {
             // goes to page for red
+            document.location.href = "unsafe.html";
             } else {
-                // goes to page for yellow
+                //goes to page for yellow
+                document.location.href = "midsafe.html";
             
             }
+            
 }
 
         </script>
