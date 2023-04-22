@@ -13,8 +13,8 @@
             </p>
  
                 
-                    <button class = "buttonY" id="button">Yes</buttton> 
-                    <button onclick="f()" class ="buttonN" id="button">No</buttton>
+                    <button class = "buttonY1" onclick="fY()">Yes</buttton> 
+                    <button onclick="fN()" class ="buttonN1">No</buttton>
                 
             
 
@@ -27,8 +27,8 @@
             </p>
 
             
-            <button class = "buttonY" onclick = "e()" id="button">Yes</buttton> 
-                <button class ="buttonN" id="button">No</buttton>
+            <button class = "buttonY2" onclick = "eY()" >Yes</buttton> 
+                <button class ="buttonN2" onclick ="eN()">No</buttton>
 
         </div>
 
@@ -36,24 +36,24 @@
             <p class = "questionText"> Question 3: <br> </p>
             <p class = "bobsText">Do you have a fever?  </p>
 
-            <button class = "buttonY" onclick = "fev()" id="button">Yes</buttton> 
-                <button class ="buttonN" id="button">No</buttton>
+            <button class = "buttonY3" onclick = "fevY()" id="button">Yes</buttton> 
+                <button class ="buttonN3" onclick= "fevN()">No</buttton>
         </div>
 
         <div>
             <p class = "questionText"> Question 4: <br>  </p>
             <p class = "bobsText"> Do you have a cough?  </p>
 
-            <button class = "buttonY" onclick = "c()" id="button">Yes</buttton> 
-             <button class ="buttonN" id="button">No</buttton>
+            <button class = "buttonY4" onclick = "cY()" >Yes</buttton> 
+             <button class ="buttonN4" onclick = "cN()">No</buttton>
         </div>
 
         <div>
             <p class = "questionText"> Question 5: <br>  </p>
             <p class = "bobsText">Do you have shortness of breath? </p>
 
-            <button class = "buttonY" id="button" onclick = "s()">Yes</buttton> 
-            <button class ="buttonN" id="button">No</buttton>
+            <button class = "buttonY5" onclick = "sY()">Yes</buttton> 
+            <button class ="buttonN5" onclick = "sN()">No</buttton>
         </div>
         
         <div>
@@ -66,29 +66,90 @@
             var cough = false;
             var shortBreath = false;
             
-            function f(){
+            function fN(){
                 feelsgood = false;
+                const y = document.querySelector(".buttonY1");
+                const n = document.querySelector(".buttonN1");
+                n.style.backgroundColor = "yellow";
+                y.style.backgroundColor = "transparent";
             }
 
-            function e(){
+            function fY(){
+                feelsgood = true;
+                const y = document.querySelector(".buttonY1");
+                const n = document.querySelector(".buttonN1");
+                n.style.backgroundColor = "transparent";
+                y.style.backgroundColor = "yellow";
+            }
+
+            function eN(){
+                exposed = false;
+                const y = document.querySelector(".buttonY2");
+                const n = document.querySelector(".buttonN2");
+                n.style.backgroundColor = "yellow";
+                y.style.backgroundColor = "transparent";
+            }
+
+            function eY(){
                 exposed = true;
+                const y = document.querySelector(".buttonY2");
+                const n = document.querySelector(".buttonN2");
+                n.style.backgroundColor = "transparent";
+                y.style.backgroundColor = "yellow";
             }
 
-            function fev(){
+            function fevN(){
+                fever = false;
+                const y = document.querySelector(".buttonY3");
+                const n = document.querySelector(".buttonN3");
+                n.style.backgroundColor = "yellow";
+                y.style.backgroundColor = "transparent";
+            }
+
+            function fevY(){
                 fever = true;
+                const y = document.querySelector(".buttonY3");
+                const n = document.querySelector(".buttonN3");
+                n.style.backgroundColor = "transparent";
+                y.style.backgroundColor = "yellow";
             }
 
-            function c(){
+            function cN(){
+                cough = false;
+                const y = document.querySelector(".buttonY4");
+                const n = document.querySelector(".buttonN4");
+                n.style.backgroundColor = "yellow";
+                y.style.backgroundColor = "transparent";
+            }
+
+            function cY(){
                 cough = true;
+                const y = document.querySelector(".buttonY4");
+                const n = document.querySelector(".buttonN4");
+                n.style.backgroundColor = "transparent";
+                y.style.backgroundColor = "yellow";
             }
 
-            function s(){
-                shortBreath = true;
+            function sN(){
+                shortBreath = false;
+                const y = document.querySelector(".buttonY5");
+                const n = document.querySelector(".buttonN5");
+                n.style.backgroundColor = "yellow";
+                y.style.backgroundColor = "transparent";
             }
+
+            function sY(){
+                shortBreath = true;
+                const y = document.querySelector(".buttonY5");
+                const n = document.querySelector(".buttonN5");
+                n.style.backgroundColor = "transparent";
+                y.style.backgroundColor = "yellow";
+            }
+
 
             function getR(){
             if (feelsgood == true && exposed == false && fever == false && cough == false && shortBreath == false) {
-            // goes to page for green
+            // goes to page for greens
             
                 document.location.href = "safe.html";
             } else if (fever == true || cough == true || shortBreath == true) {
@@ -97,6 +158,7 @@
             } else {
                 //goes to page for yellow
                 document.location.href = "midsafe.html";
+               
             
             }
             
