@@ -1,3 +1,10 @@
 .resourcesBackground{
     background-color:rgba(231, 206, 97, 0.667);
 }
+.titleTxt{
+    font-size: 30;
+    color:cornflowerblue;
+}
+.otherTxt{
+    font-size: 23;
+}
