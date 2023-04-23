@@ -1,5 +1,8 @@
 var years = null;
 var degree = null;
+var ret = null;
+var feel = null;
+var remot = null;
 
 function y1(){
     years = 1;
@@ -93,4 +96,107 @@ function phd(){
     c.style.backgroundColor = "white"; 
     d.style.backgroundColor = "white"; 
     e.style.backgroundColor = "yellow";                
+}
+
+function r1(){
+    ret = 0;
+    const a = document.querySelector(".r1");
+    const b = document.querySelector(".r2");
+    const c = document.querySelector(".r3");   
+    const d = document.querySelector(".r4");     
+    a.style.backgroundColor = "yellow";
+    b.style.backgroundColor = "white"; 
+    c.style.backgroundColor = "white"; 
+    d.style.backgroundColor = "white"; 
+}
+
+function r2(){
+    ret = 1;
+    const a = document.querySelector(".r1");
+    const b = document.querySelector(".r2");
+    const c = document.querySelector(".r3");   
+    const d = document.querySelector(".r4");     
+    a.style.backgroundColor = "white";
+    b.style.backgroundColor = "yellow"; 
+    c.style.backgroundColor = "white"; 
+    d.style.backgroundColor = "white"; 
+}
+
+function r3(){
+    ret = 6;
+    const a = document.querySelector(".r1");
+    const b = document.querySelector(".r2");
+    const c = document.querySelector(".r3");   
+    const d = document.querySelector(".r4");     
+    a.style.backgroundColor = "white";
+    b.style.backgroundColor = "white"; 
+    c.style.backgroundColor = "yellow"; 
+    d.style.backgroundColor = "white"; 
+}
+
+function r4(){
+    ret = 12;
+    const a = document.querySelector(".r1");
+    const b = document.querySelector(".r2");
+    const c = document.querySelector(".r3");   
+    const d = document.querySelector(".r4");     
+    a.style.backgroundColor = "white";
+    b.style.backgroundColor = "white"; 
+    c.style.backgroundColor = "white"; 
+    d.style.backgroundColor = "yellow"; 
+}
+
+function f1(){
+    
+    feel = "good";
+    const a = document.querySelector(".f1");
+    const b = document.querySelector(".f2");
+    const c = document.querySelector(".f3");        
+    a.style.backgroundColor = "yellow";
+    b.style.backgroundColor = "white"; 
+    c.style.backgroundColor = "white"; 
+}
+
+function f2(){
+    feel = "bad";
+    const a = document.querySelector(".f1");
+    const b = document.querySelector(".f2");
+    const c = document.querySelector(".f3");        
+    a.style.backgroundColor = "white";
+    b.style.backgroundColor = "yellow"; 
+    c.style.backgroundColor = "white"; 
+}
+
+function f3(){
+    feel = "sick";
+    const a = document.querySelector(".f1");
+    const b = document.querySelector(".f2");
+    const c = document.querySelector(".f3");        
+    a.style.backgroundColor = "white";
+    b.style.backgroundColor = "white"; 
+    c.style.backgroundColor = "yellow"; 
+}
+
+function w1(){
+   remot = true;
+    const a = document.querySelector(".w1");
+    const b = document.querySelector(".w2");
+  
+    a.style.backgroundColor = "yellow";
+    b.style.backgroundColor = "white"; 
+  
+}
+function w2(){
+    remot = false;
+    const a = document.querySelector(".w1");
+    const b = document.querySelector(".w2");
+          
+    a.style.backgroundColor = "white";
+    b.style.backgroundColor = "yellow"; 
+  
+}
+
+function getR(){
+// 
+
 }
