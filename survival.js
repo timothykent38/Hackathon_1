@@ -126,7 +126,7 @@
             if(haveCovid){
                 resultChance=51;
             }else{
-                resultChance=100;
+                resultChance=89;
             }
             
             if(liveWithCovid){
@@ -135,7 +135,7 @@
             if(mentalyWell){
                 resultChance+=39;
             }else{
-                resultChance-=29
+                resultChance-=23
             }
             if(relationship){
                 resultChance+=19;
@@ -146,6 +146,8 @@
             resultChance = (resultChance + (temp*20));
             if(resultChance>100){
                 resultChance=100;
+            }else if(resultChance<0){
+                resultChance=0;
             }
         var disp = null;
           disp = document.getElementById("result");
