@@ -196,5 +196,12 @@
     
 }
 
+.errorText{
+    font-size: 40;
+    color: red;
+    float: center;
+    margin: 10;
+}
+
 
 

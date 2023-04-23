@@ -56,16 +56,19 @@
             <button class = "buttonY5" onclick = "sY()">Yes</buttton> 
             <button class ="buttonN5" onclick = "sN()">No</buttton>
         </div>
-        
+        <div>
+            <p id = "errorMessage" class = 'errorText'>  </p>
+        </div>
         <div>
             <button class = "buttonFinished" onclick = "getR()"> GET RESULTS </button>
         </div>
+        
         <script>
-            var feelsgood = true;
-            var exposed  = false;
-            var fever = false;
-            var cough = false;
-            var shortBreath = false;
+            var feelsgood = null;
+            var exposed  = null;
+            var fever = null;
+            var cough = null;
+            var shortBreath = null;
             
             function fN(){
                 feelsgood = false;
@@ -149,6 +152,11 @@
 
 
             function getR(){
+            if(shortBreath == null || feelsgood == null || fever == null || cough == null|| exposed == null){
+                var disp = document.getElementById("errorMessage");
+                disp.innerHTML = "You must answer all the questions";
+                return;
+            }
             if (feelsgood == true && exposed == false && fever == false && cough == false && shortBreath == false) {
             // goes to page for greens
             
