@@ -3,24 +3,123 @@
         <link rel="stylesheet" href = "jobs.css">
     </head>
 
-    <body>
+    <body class = "mainPage">
         <div>
-            <p> Question 1. <br> What is your education level </p>
+            <p class = "questionText"> Question 1. <br> What is your education level </p>
         </div>
-        <button class="ms"> Middle School</button>
-        <button class="hs"> High School</button>
-        <button class="b"> Bachlor Degree </button>
-        <button class="g"> Graduate Degree </button>
-        <button class="phd"> PHD </button>
-        what is your eduation level
-        high school
-        baclorates degree
-        graduate degree
-        phd
-        middle school
+        <button class="ms" onclick="ms()"> Middle School </button>
+        <button class="hs"onclick="hs()"> High School </button>
+        <button class="b"onclick="b()"> Bachlor Degree </button>
+        <button class="g"onclick="g()"> Graduate Degree </button>
+        <button class="phd"onclick="phd()"> PHD Degree </button>
+        
+        
+        <div>
+            <p class = "questionText"> Question 2. <br> How many years of job experience do you have </p>
+        </div>
+        <button class="y1" onclick="y1()"> 1-2 years </button>
+        <button class="y2"onclick="y2()"> 3-4 years </button>
+        <button class="y3"onclick="y3()"> 5 years </button>
 
-        how many years of job experience do you have
-        1-2 3-4 5+
 
+
+        <script>
+            var years = null;
+            var degree = null;
+
+            function y1(){
+                years = 1;
+                const a = document.querySelector(".y1");
+                const b = document.querySelector(".y2");
+                const c = document.querySelector(".y3");        
+                a.style.backgroundColor = "yellow";
+                b.style.backgroundColor = "white"; 
+                c.style.backgroundColor = "white"; 
+            }
+            function y2(){
+                years = 3;
+                const a = document.querySelector(".y1");
+                const b = document.querySelector(".y2");
+                const c = document.querySelector(".y3");        
+                a.style.backgroundColor = "white";
+                b.style.backgroundColor = "yellow"; 
+                c.style.backgroundColor = "white"; 
+            }
+            function y3(){
+                years = 5;
+                const a = document.querySelector(".y1");
+                const b = document.querySelector(".y2");
+                const c = document.querySelector(".y3");        
+                a.style.backgroundColor = "white";
+                b.style.backgroundColor = "white"; 
+                c.style.backgroundColor = "yellow"; 
+            }
+            function ms(){
+                degree = ms;
+                const a = document.querySelector(".ms");
+                const b = document.querySelector(".hs");
+                const c = document.querySelector(".b");
+                const d = document.querySelector(".g");
+                const e = document.querySelector(".phd");          
+                a.style.backgroundColor = "yellow";
+                b.style.backgroundColor = "white"; 
+                c.style.backgroundColor = "white"; 
+                d.style.backgroundColor = "white"; 
+                e.style.backgroundColor = "white";                
+            }
+
+            function hs(){
+                degree = hs;
+                const a = document.querySelector(".ms");
+                const b = document.querySelector(".hs");
+                const c = document.querySelector(".b");
+                const d = document.querySelector(".g");
+                const e = document.querySelector(".phd");          
+                a.style.backgroundColor = "white";
+                b.style.backgroundColor = "yellow"; 
+                c.style.backgroundColor = "white"; 
+                d.style.backgroundColor = "white"; 
+                e.style.backgroundColor = "white";                
+            }
+            function b(){
+                degree = hs;
+                const a = document.querySelector(".ms");
+                const b = document.querySelector(".hs");
+                const c = document.querySelector(".b");
+                const d = document.querySelector(".g");
+                const e = document.querySelector(".phd");          
+                a.style.backgroundColor = "white";
+                b.style.backgroundColor = "white"; 
+                c.style.backgroundColor = "yellow"; 
+                d.style.backgroundColor = "white"; 
+                e.style.backgroundColor = "white"; 
+            }
+            function g(){
+                degree = g;
+                const a = document.querySelector(".ms");
+                const b = document.querySelector(".hs");
+                const c = document.querySelector(".b");
+                const d = document.querySelector(".g");
+                const e = document.querySelector(".phd");          
+                a.style.backgroundColor = "white";
+                b.style.backgroundColor = "white"; 
+                c.style.backgroundColor = "white"; 
+                d.style.backgroundColor = "yellow"; 
+                e.style.backgroundColor = "white";                
+            }
+            function phd(){
+                degree = phd;
+                const a = document.querySelector(".ms");
+                const b = document.querySelector(".hs");
+                const c = document.querySelector(".b");
+                const d = document.querySelector(".g");
+                const e = document.querySelector(".phd");          
+                a.style.backgroundColor = "white";
+                b.style.backgroundColor = "white"; 
+                c.style.backgroundColor = "white"; 
+                d.style.backgroundColor = "white"; 
+                e.style.backgroundColor = "yellow";                
+            }
+        </script>
     </body>
 </html>
