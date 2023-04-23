@@ -178,6 +178,8 @@
             
             if(haveCovid){
                 resultChance=51;
+            }else{
+                resultChance=100;
             }
             
             if(liveWithCovid){
@@ -185,12 +187,19 @@
             }
             if(mentalyWell){
                 resultChance+=39;
+            }else{
+                resultChance-=29
             }
             if(relationship){
                 resultChance+=19;
+            }else{
+                resultChance-=8
             }
             //document.write("DDD");
-            //resultChance= resultChance + (doesOfVaccine*20);
+            //if(doseOfVaccine!==0){
+            //    let resultChance= resultChance + (doesOfVaccine*20);
+            //}
+            
            // document.write("DDD");
             if(resultChance>100){
                 resultChance=100;
