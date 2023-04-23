@@ -9,11 +9,17 @@
     background-color: rgba(231, 206, 97, 0.667);
 }
 .error{
-    font-size: 20;
+    font-size: 30;
     color: red;
 }
 
 .result{
+    border-radius: 25px;
+    width: 300;
+    height: 150;
+    margin: 30;
+
+    font-size: 40;
     color: green;
 }
 
@@ -21,154 +27,165 @@
 
 
 
-
+footer {
+    background-color: white;
+    color: black;
+    bottom: 0;
+    width: 100vw;
+    font-size: 16px;
+  }
+  footer * {
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+  }
 
 .hs{
-    border-radius: 25px;
-    width: 300;
-    height: 200;
+   
+    width: 250;
+    height: 150;
     color: rgb(17, 120, 188);
-    margin: 40;
-    font-size: 60;
+    margin: 20;
+    font-size: 50;
 }
 
 .ms{
     border-radius: 25px;
-    width: 300;
-    height: 200;
+    width: 250;
+    height: 150;
     color: rgb(17, 120, 188);
-    margin: 40;
-    font-size: 60;
+    margin: 20;
+    font-size: 50;
 }
 
 .b{
     border-radius: 25px;
-    width: 300;
-    height: 200;
+    width: 250;
+    height: 150;
     color: rgb(17, 120, 188);
-    margin: 40;
-    font-size: 60;
+    margin: 20;
+    font-size: 50;
 }
 
 .g{
     border-radius: 25px;
-    width: 300;
-    height: 200;
+    width: 250;
+    height: 150;
     color: rgb(17, 120, 188);
-    margin: 40;
-    font-size: 60;
+    margin: 20;
+    font-size: 50;
 }
 
 .phd{
     border-radius: 25px;
-    width: 300;
-    height: 200;
+    width: 250;
+    height: 150;
     color: rgb(17, 120, 188);
-    margin: 40;
-    font-size: 60;
+    margin: 20;
+    font-size: 50;
 }
 
 .y1{
     border-radius: 25px;
-    width: 300;
-    height: 200;
+    width: 250;
+    height: 150;
     color: rgb(17, 120, 188);
-    margin: 40;
-    font-size: 60;
+    margin: 20;
+    font-size: 50;
 }
 
 .y2{
     border-radius: 25px;
-    width: 300;
-    height: 200;
+    width: 250;
+    height: 150;
     color: rgb(17, 120, 188);
-    margin: 40;
-    font-size: 60;
+    margin: 20;
+    font-size: 50;
 }
 
 .y3{
     border-radius: 25px;
-    width: 300;
-    height: 200;
+    width: 250;
+    height: 150;
     color: rgb(17, 120, 188);
-    margin: 40;
-    font-size: 60;
+    margin: 20;
+    font-size: 50;
 }
 
 .r1{
     border-radius: 25px;
-    width: 300;
-    height: 200;
+    width: 250;
+    height: 150;
     color: rgb(17, 120, 188);
     margin: 20;
-    font-size: 20;
+    font-size: 50;
 }
 
 .r2{
     border-radius: 25px;
-    width: 300;
-    height: 200;
+    width: 250;
+    height: 150;
     color: rgb(17, 120, 188);
     margin: 20;
-    font-size: 20;
+    font-size: 50;
 }
 
 .r3{
     border-radius: 25px;
-    width: 300;
-    height: 200;
+    width: 250;
+    height: 150;
     color: rgb(17, 120, 188);
     margin: 20;
-    font-size: 20;
+    font-size: 50;
 }
 
 .r4{
     border-radius: 25px;
-    width: 300;
-    height: 200;
+    width: 250;
+    height: 150;
     color: rgb(17, 120, 188);
     margin: 20;
-    font-size: 20;
+    font-size: 50;
 }
 
 .f1{
     border-radius: 25px;
-    width: 300;
-    height: 200;
+    width: 250;
+    height: 150;
     color: rgb(17, 120, 188);
     margin: 20;
-    font-size: 20;
+    font-size: 50;
 }
 .f2{
     border-radius: 25px;
-    width: 300;
-    height: 200;
+    width: 250;
+    height: 150;
     color: rgb(17, 120, 188);
     margin: 20;
-    font-size: 20;
+    font-size: 50;
 }
 .f3{
     border-radius: 25px;
-    width: 300;
-    height: 200;
+    width: 250;
+    height: 150;
     color: rgb(17, 120, 188);
     margin: 20;
-    font-size: 20;
+    font-size: 50;
 }
 
 .w1{
     border-radius: 25px;
-    width: 300;
-    height: 200;
+    width: 250;
+    height: 150;
     color: rgb(17, 120, 188);
     margin: 20;
-    font-size: 20;
+    font-size: 50;
 }
 .w2{
     border-radius: 25px;
-    width: 300;
-    height: 200;
+    width: 250;
+    height: 150;
     color: rgb(17, 120, 188);
     margin: 20;
-    font-size: 20;
+    font-size: 50;
 }

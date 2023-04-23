@@ -32,7 +32,7 @@ function y3(){
     c.style.backgroundColor = "yellow"; 
 }
 function ms(){
-    degree = ms;
+    degree = "ms";
     const a = document.querySelector(".ms");
     const b = document.querySelector(".hs");
     const c = document.querySelector(".b");
@@ -46,7 +46,7 @@ function ms(){
 }
 
 function hs(){
-    degree = hs;
+    degree = "hs";
     const a = document.querySelector(".ms");
     const b = document.querySelector(".hs");
     const c = document.querySelector(".b");
@@ -72,7 +72,7 @@ function b(){
     e.style.backgroundColor = "white"; 
 }
 function g(){
-    degree = g;
+    degree = "g";
     const a = document.querySelector(".ms");
     const b = document.querySelector(".hs");
     const c = document.querySelector(".b");
@@ -85,7 +85,7 @@ function g(){
     e.style.backgroundColor = "white";                
 }
 function phd(){
-    degree = phd;
+    degree = "phd";
     const a = document.querySelector(".ms");
     const b = document.querySelector(".hs");
     const c = document.querySelector(".b");
@@ -197,22 +197,36 @@ function w2(){
 }
 
 function getR(){
-    if(degree == "bs" || degree == g || degree == phd){
-        if(year == 3 || year == 5 || feel == "technology industry"){
-            //return technology service like scientists and Analyst
+    if(degree == null || feel == null || years == null || remot == null|| ret == null){
+        var disp = document.getElementById("errorMessage");
+        disp.innerText = "You must answer all the questions";
+        return;
+    }
+    var str = "You should probably work in "
+    if(degree === "bs" || degree === "g" || degree === "phd"){
+        if(years == 3 || years == 5 || feel === "technology industry"){
+            //return technology service like scientists and Analyst\
+            str += "technology service like scientists and Analyst"
         }else{
             //service 
+            
         }
 
         }
-        else if(degree == ms || degree == hs){
-            if(feel == "sport industry" || year == 1){
+        else if(degree === "ms" || degree === "hs"){
+            if(feel === "sport industry" || years == 1){
                 // return sport industry like atheletes
+                str+= "the sport industry as an athlete "
             }
             
         }else{
             // service industry 
+            str+= "service as a worker or accountant "
         }
+        str += " you can start working in " + ret + " months";
+
+        var disp = document.getElementById("errorMessage");
+        disp.innerText = str;
     
     }
 
