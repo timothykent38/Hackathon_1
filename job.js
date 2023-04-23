@@ -221,7 +221,7 @@ function getR(){
             
         }else{
             // service industry 
-          
+            str+= "service as a worker or accountant "
         }
         str += " you can start working in " + ret + " months";
 
