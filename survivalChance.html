@@ -55,6 +55,7 @@
         var doseOfVaccine = -1;
         var mentalyWell = true;
         var relationship = true;
+        var resultChance = -1;
 
         function survival1N() {
             haveCovid = false;
@@ -139,23 +140,6 @@
             }
 
 
-
-        function fevN() {
-            fever = false;
-            const y = document.querySelector(".buttonY3");
-            const n = document.querySelector(".buttonN3");
-            n.style.backgroundColor = "yellow";
-            y.style.backgroundColor = "white";
-        }
-
-        function fevY() {
-            fever = true;
-            const y = document.querySelector(".buttonY3");
-            const n = document.querySelector(".buttonN3");
-            n.style.backgroundColor = "white";
-            y.style.backgroundColor = "yellow";
-        }
-
         function survival4N() {
             mentalyWell = false;
             const y = document.querySelector(".buttonY4");
@@ -188,23 +172,27 @@
             y.style.backgroundColor = "yellow";
         }
 
-
-        function getR() {
-            if (feelsgood == true && exposed == false && fever == false && cough == false && shortBreath == false) {
-                // goes to page for greens
-
-                document.location.href = "safe.html";
-            } else if (fever == true || cough == true || shortBreath == true) {
-                // goes to page for red
-                document.location.href = "unsafe.html";
-            } else {
-                //goes to page for yellow
-                document.location.href = "midsafe.html";
-
-
+        function getSR(){
+            if(haveCovid){
+                resultChance=51;
+            }
+            if(liveWithCovid){
+                resultChance-=22;
+            }
+            if(mentalyWell){
+                resultChance+=39;
+            }
+            if(relationship){
+                resultChance+=19;
+            }
+            resultChance+=(doesOfVaccine*20);
+            if(resultChance>100){
+                resultChance=100;
             }
 
+
         }
+
     </script>
 </body>
 
