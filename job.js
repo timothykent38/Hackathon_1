@@ -59,7 +59,7 @@ function hs(){
     e.style.backgroundColor = "white";                
 }
 function b(){
-    degree = hs;
+    degree = "bs";
     const a = document.querySelector(".ms");
     const b = document.querySelector(".hs");
     const c = document.querySelector(".b");
@@ -148,7 +148,7 @@ function r4(){
 
 function f1(){
     
-    feel = "good";
+    feel = "service industry";
     const a = document.querySelector(".f1");
     const b = document.querySelector(".f2");
     const c = document.querySelector(".f3");        
@@ -158,7 +158,7 @@ function f1(){
 }
 
 function f2(){
-    feel = "bad";
+    feel = "technology industry";
     const a = document.querySelector(".f1");
     const b = document.querySelector(".f2");
     const c = document.querySelector(".f3");        
@@ -168,7 +168,7 @@ function f2(){
 }
 
 function f3(){
-    feel = "sick";
+    feel = "sport industry";
     const a = document.querySelector(".f1");
     const b = document.querySelector(".f2");
     const c = document.querySelector(".f3");        
@@ -197,11 +197,23 @@ function w2(){
 }
 
 function getR(){
+    if(degree == "bs" || degree == g || degree == phd){
+        if(year == 3 || year == 5 || feel == "technology industry"){
+            //return technology service like scientists and Analyst
+        }else{
+            //service 
+        }
 
-if(remot == null || years == null || feel == null || ret == null|| degree == null){
-    var disp = document.getElementById("errorMessage");
-    disp.innerText = "You must answer all the questions";
-    return;
-}
+        }
+        else if(degree == ms || degree == hs){
+            if(feel == "sport industry" || year == 1){
+                // return sport industry like atheletes
+            }
+            
+        }else{
+            // service industry 
+        }
+    
+    }
 
-}
+
