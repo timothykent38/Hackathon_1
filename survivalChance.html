@@ -194,17 +194,12 @@
                 resultChance+=19;
             }else{
                 resultChance-=8
-            }
-            //document.write("DDD");
-            //if(doseOfVaccine!==0){
-            //    let resultChance= resultChance + (doesOfVaccine*20);
-            //}
-            
-           // document.write("DDD");
+            }  
+            var temp = parseInt(doseOfVaccine);
+            resultChance = (resultChance + (temp*20));
             if(resultChance>100){
                 resultChance=100;
             }
-
         var disp = null;
           disp = document.getElementById("result");
          // document.write(disp);
