@@ -1,0 +1,12 @@
+.mainTitle{
+    color: blue;
+    font-size: 30px;
+}
+
+.box{
+    background-color: grey;
+    margin: auto;
+    width: 300px;
+    padding: 20;
+
+}
