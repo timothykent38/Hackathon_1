@@ -49,6 +49,7 @@
     <div>
         <button class="buttonFinished" onclick="getSR()"> GET RESULTS </button>
     </div>
+    <p id = "result" class = "resultText">  </p>
     <script>
         var haveCovid = false;
         var liveWithCovid = false;
@@ -173,9 +174,11 @@
         }
 
         function getSR(){
+            
             if(haveCovid){
                 resultChance=51;
             }
+            
             if(liveWithCovid){
                 resultChance-=22;
             }
@@ -185,11 +188,17 @@
             if(relationship){
                 resultChance+=19;
             }
-            resultChance+=(doesOfVaccine*20);
+            //document.write("DDD");
+            //resultChance= resultChance + (doesOfVaccine*20);
+           // document.write("DDD");
             if(resultChance>100){
                 resultChance=100;
             }
 
+        var disp = null;
+          disp = document.getElementById("result");
+         // document.write(disp);
+         disp.innerHTML = "Your survival chance is " + resultChance;   
 
         }
 
