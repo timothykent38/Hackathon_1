@@ -158,7 +158,7 @@ function f1(){
 }
 
 function f2(){
-    feel = "sport industry";
+    feel = "technology industry";
     const a = document.querySelector(".f1");
     const b = document.querySelector(".f2");
     const c = document.querySelector(".f3");        
@@ -168,7 +168,7 @@ function f2(){
 }
 
 function f3(){
-    feel = "technology industry";
+    feel = "sport industry";
     const a = document.querySelector(".f1");
     const b = document.querySelector(".f2");
     const c = document.querySelector(".f3");        
@@ -207,7 +207,7 @@ function getR(){
         // return sport industry like atheletes
         str+= "the sport industry as an athlete "
     }
-    else if((degree === "bs" || degree === "g" || degree === "phd") && (feel === "technology industry" && years >= 4)){    
+    else if((degree === "bs" || degree === "g" || degree === "phd") && (feel === "technology industry" && years >= 3)){    
            //return technology service like scientists and Analyst\
            str += "technology service like scientists and Analyst"
           
