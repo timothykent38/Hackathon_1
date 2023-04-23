@@ -203,29 +203,19 @@ function getR(){
         return;
     }
     var str = "You should probably work in "
-    if(degree === "bs" || degree === "g" || degree === "phd"){
-        if(years == 3 || years == 5 || feel === "technology industry"){
-            //return technology service like scientists and Analyst\
-            str += "technology service like scientists and Analyst"
-        }else{
+    if((feel === "sport industry" || years >= 2) && (degree === "hs" || degree === "bs" || degree === "g" || degree === "phd")){
+        // return sport industry like atheletes
+        str+= "the sport industry as an athlete "
+    }
+    else if((degree === "bs" || degree === "g" || degree === "phd") && (feel === "technology industry" && years >= 4)){    
+           //return technology service like scientists and Analyst\
+           str += "technology service like scientists and Analyst"
+          
+    }else{
             //service 
             str+= "service as a worker or accountant "
         }
 
-        }
-    if(degree === "ms" || degree === "hs"){
-        if(feel === "sport industry" || years == 1){
-                // return sport industry like atheletes
-                str+= "the sport industry as an athlete "
-                       
-        }else{
-            // service industry 
-            str+= "service as a worker or accountant "
-        }
-    }
-    else{
-        str+= "service as a worker or accountant "
-    }
         str += " you can start working in " + ret + " months";
 
         var disp = document.getElementById("errorMessage");
