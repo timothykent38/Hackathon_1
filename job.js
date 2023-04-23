@@ -203,7 +203,7 @@ function getR(){
         return;
     }
     var str = "You should probably work in "
-    if((feel === "sport industry" || years >= 2) && (degree === "hs" || degree === "bs" || degree === "g" || degree === "phd")){
+    if((feel === "sport industry" && years >= 2) && (degree === "hs" || degree === "bs" || degree === "g" || degree === "phd")){
         // return sport industry like atheletes
         str+= "the sport industry as an athlete "
     }
