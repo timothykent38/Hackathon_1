@@ -213,16 +213,19 @@ function getR(){
         }
 
         }
-        else if(degree === "ms" || degree === "hs"){
-            if(feel === "sport industry" || years == 1){
+    if(degree === "ms" || degree === "hs"){
+        if(feel === "sport industry" || years == 1){
                 // return sport industry like atheletes
                 str+= "the sport industry as an athlete "
-            }
-            
+                       
         }else{
             // service industry 
             str+= "service as a worker or accountant "
         }
+    }
+    else{
+        str+= "service as a worker or accountant "
+    }
         str += " you can start working in " + ret + " months";
 
         var disp = document.getElementById("errorMessage");
