@@ -1,5 +1,211 @@
 <html>
-    <body>
-        YOUR CHANCE OF SURVIVAL IS NONE
-    </body>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body class="mainPage">
+    <p class="survivalTxt1">
+        Answer the folowing to get the survival chance form the Covid:
+    </p>
+    <div>
+        <p class="survivalTxt2">
+            1)Are you experiencing Covid currently?
+        </p>
+        <button class="buttonY1" onclick="survival1Y()">Yes</buttton>
+            <button class="buttonN1" onclick="survival1N()">No</buttton>
+    </div>
+
+    <div>
+        <p class="survivalTxt2">
+            2)Are you living with Covid carrier?
+        </p>
+        <button class="buttonY2" onclick="survival2Y()">Yes</buttton>
+            <button class="buttonN2" onclick="survival2N()">No</buttton>
+    </div>
+    <div>
+        <p class="survivalTxt2">
+            3)How many does of vaccines you took before?
+        </p>
+        <button class="vac1" onclick="vac1()">0</buttton>
+            <button class="vac2" onclick="vac2()">1</buttton>
+                <button class="vac3" onclick="vac3()">2</buttton>
+                    <button class="vac4" onclick="vac4()">3</buttton>
+    </div>
+    <div>
+        <p class="survivalTxt2">
+            4)Do you think you will be alive?</p>
+        <button class="buttonY4" onclick="survival4Y()">Yes</buttton>
+            <button class="buttonN4" onclick="survival4N()">No</buttton>
+    </div>
+    <div>
+        <p class="survivalTxt2">
+            5)Do you have good relationship with your family member?
+        </p>
+        <button class="buttonY5" onclick="survival5Y()">Yes</buttton>
+            <button class="buttonN5" onclick="survival5N()">No</buttton>
+    </div>
+    <div>
+        <button class="buttonFinished" onclick="getSR()"> GET RESULTS </button>
+    </div>
+    <script>
+        var haveCovid = false;
+        var liveWithCovid = false;
+        var doseOfVaccine = -1;
+        var mentalyWell = true;
+        var relationship = true;
+
+        function survival1N() {
+            haveCovid = false;
+            const y = document.querySelector(".buttonY1");
+            const n = document.querySelector(".buttonN1");
+            n.style.backgroundColor = "yellow";
+            y.style.backgroundColor = "white";
+        }
+
+        function survival1Y() {
+            haveCovid = true;
+            const y = document.querySelector(".buttonY1");
+            const n = document.querySelector(".buttonN1");
+            n.style.backgroundColor = "white";
+            y.style.backgroundColor = "yellow";
+        }
+
+        function survival2N() {
+            liveWithCovid = false;
+            const y = document.querySelector(".buttonY2");
+            const n = document.querySelector(".buttonN2");
+            n.style.backgroundColor = "yellow";
+            y.style.backgroundColor = "white";
+        }
+
+        function survival2Y() {
+            liveWithCovid = true;
+            const y = document.querySelector(".buttonY2");
+            const n = document.querySelector(".buttonN2");
+            n.style.backgroundColor = "white";
+            y.style.backgroundColor = "yellow";
+        }
+
+        function vac1() {
+            doseOfVaccine = 0;
+            const y = document.querySelector(".vac2");
+            const w = document.querySelector(".vac3");
+            const z = document.querySelector(".vac4");
+            const n = document.querySelector(".vac1");
+            n.style.backgroundColor = "yellow";
+            y.style.backgroundColor = "white";
+            w.style.backgroundColor = "white";
+            z.style.backgroundColor = "white";
+
+        }
+        function vac2() {
+            doseOfVaccine = 1;
+            const y = document.querySelector(".vac2");
+            const w = document.querySelector(".vac3");
+            const z = document.querySelector(".vac4");
+            const n = document.querySelector(".vac1");
+            n.style.backgroundColor = "white";
+            y.style.backgroundColor = "yellow";
+            w.style.backgroundColor = "white";
+            z.style.backgroundColor = "white";
+
+        }
+
+        function vac3(){
+                doseOfVaccine = 2;
+                const y = document.querySelector(".vac2");
+                const w = document.querySelector(".vac3");
+                const z = document.querySelector(".vac4");
+                const n = document.querySelector(".vac1");
+                n.style.backgroundColor = "white";
+                y.style.backgroundColor = "white"; 
+                w.style.backgroundColor = "yellow"; 
+                z.style.backgroundColor = "white";
+
+            }
+            function vac4(){
+                doseOfVaccine = 3;
+                const y = document.querySelector(".vac2");
+                const w = document.querySelector(".vac3");
+                const z = document.querySelector(".vac4");
+                const n = document.querySelector(".vac1");
+                n.style.backgroundColor = "white";
+                y.style.backgroundColor = "white"; 
+                w.style.backgroundColor = "white"; 
+                z.style.backgroundColor = "yellow";
+
+            }
+
+
+
+        function fevN() {
+            fever = false;
+            const y = document.querySelector(".buttonY3");
+            const n = document.querySelector(".buttonN3");
+            n.style.backgroundColor = "yellow";
+            y.style.backgroundColor = "white";
+        }
+
+        function fevY() {
+            fever = true;
+            const y = document.querySelector(".buttonY3");
+            const n = document.querySelector(".buttonN3");
+            n.style.backgroundColor = "white";
+            y.style.backgroundColor = "yellow";
+        }
+
+        function survival4N() {
+            mentalyWell = false;
+            const y = document.querySelector(".buttonY4");
+            const n = document.querySelector(".buttonN4");
+            n.style.backgroundColor = "yellow";
+            y.style.backgroundColor = "white";
+        }
+
+        function survival4Y() {
+            mentalyWell = true;
+            const y = document.querySelector(".buttonY4");
+            const n = document.querySelector(".buttonN4");
+            n.style.backgroundColor = "white";
+            y.style.backgroundColor = "yellow";
+        }
+
+        function survival5N() {
+            relationship = false;
+            const y = document.querySelector(".buttonY5");
+            const n = document.querySelector(".buttonN5");
+            n.style.backgroundColor = "yellow";
+            y.style.backgroundColor = "white";
+        }
+
+        function survival5Y() {
+            relationship = true;
+            const y = document.querySelector(".buttonY5");
+            const n = document.querySelector(".buttonN5");
+            n.style.backgroundColor = "white";
+            y.style.backgroundColor = "yellow";
+        }
+
+
+        function getR() {
+            if (feelsgood == true && exposed == false && fever == false && cough == false && shortBreath == false) {
+                // goes to page for greens
+
+                document.location.href = "safe.html";
+            } else if (fever == true || cough == true || shortBreath == true) {
+                // goes to page for red
+                document.location.href = "unsafe.html";
+            } else {
+                //goes to page for yellow
+                document.location.href = "midsafe.html";
+
+
+            }
+
+        }
+    </script>
+</body>
+
 </html>
