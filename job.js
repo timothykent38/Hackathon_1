@@ -197,6 +197,11 @@ function w2(){
 }
 
 function getR(){
-// 
+
+if(remot == null || years == null || feel == null || ret == null|| degree == null){
+    var disp = document.getElementById("errorMessage");
+    disp.innerText = "You must answer all the questions";
+    return;
+}
 
 }

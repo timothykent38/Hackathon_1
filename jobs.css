@@ -8,6 +8,14 @@
 .mainPage{
     background-color: rgba(231, 206, 97, 0.667);
 }
+.error{
+    font-size: 20;
+    color: red;
+}
+
+.result{
+    color: green;
+}
 
 
 
